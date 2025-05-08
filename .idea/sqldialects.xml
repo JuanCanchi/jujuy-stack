@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/migrations/categories/000001_create_categories_table.down.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/migrations/categories/000001_create_categories_table.up.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/migrations/products/000002_add_status_column.down.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/migrations/products/000002_add_status_column.up.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/migrations/products/000003_add_category_to_products.down.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/migrations/products/000003_add_category_to_products.up.sql" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/migrations/users/000001_create_users_table.down.sql" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/migrations/users/000001_create_users_table.up.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/migrations/users/000002_add_role_column.down.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/migrations/users/000002_add_role_column.up.sql" dialect="GenericSQL" />
   </component>
 </project>
