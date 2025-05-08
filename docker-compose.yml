@@ -42,5 +42,17 @@ services:
       - postgres
     restart: "no"
 
+  products:
+    image: juancanchi/products:latest
+    container_name: jujuy-products
+    ports:
+      - "8080:8080"
+    environment:
+      - PORT=8080
+      - JWT_SECRET=supersecreto
+      - DB_DSN=host=postgres user=postgres password=postgres dbname=jujuy_market port=5432 sslmode=disable
+    depends_on:
+      - postgres
+
 volumes:
   pgdata:
