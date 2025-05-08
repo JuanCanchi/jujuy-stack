@@ -54,5 +54,17 @@ services:
     depends_on:
       - postgres
 
+  users:
+    image: juancanchi/users:latest
+    container_name: jujuy-users
+    ports:
+      - "8081:8081"
+    environment:
+      - PORT=8081
+      - JWT_SECRET=supersecreto
+      - DB_DSN=host=postgres user=postgres password=postgres dbname=jujuy_market port=5432 sslmode=disable
+    depends_on:
+      - postgres
+
 volumes:
   pgdata:
